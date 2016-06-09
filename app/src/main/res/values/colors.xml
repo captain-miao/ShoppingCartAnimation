@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#02A8F3</color>
+    <color name="colorPrimary">#032F5C</color>
+    <color name="colorPrimaryDark">#012B55</color>
+
+    <color name="divider">#B6B6B6</color>
+    <color name="text_color">#d9e6f5</color>
+
+    <color name="tao_bao_red">#ff4400</color>
+    <color name="tao_bao_red_bg">#ffff5000</color>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_shopping_cart_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:background="@drawable/recommend_cart_btn_bg_selector"
+        android:padding="8dp"/>
+
+    <com.github.learn.cart.ui.helper.CircleTextView
+        android:id="@+id/tv_shopping_cart_top_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignEnd="@+id/iv_shopping_cart_top"
+        android:layout_alignRight="@+id/iv_shopping_cart_top"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/homepage_shape_red_filled_circle"
+        android:textColor="@android:color/white"
+        android:text="¥0"
+        android:textSize="10sp"/>
+</RelativeLayout>

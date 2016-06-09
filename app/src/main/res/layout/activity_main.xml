@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.github.learn.cart.ui.main.MainPresenter"/>
+
+        <variable
+            name="presenter"
+            type="MainPresenter"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.main.MainActivity">
+
+        <TextView
+            android:id="@+id/tv_tao_bao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/text_color"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/shopping_cart_of_tao_bao"
+            android:onClick="@{() -> presenter.onSelectedTaoBao()}"/>
+
+        <TextView
+            android:id="@+id/tv_amazon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/shopping_cart_of_amazon"
+            android:textColor="@color/text_color"
+            android:onClick="@{() -> presenter.onSelectedAmazon()}"/>
+
+        <TextView
+            android:id="@+id/tv_jd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/text_color"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/shopping_cart_of_jd"
+            android:onClick="@{() -> presenter.onSelectedJD()}"/>
+
+    </LinearLayout>
+</layout>

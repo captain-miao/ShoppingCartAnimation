@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.github.learn.cart.ui.taobao.TaoBaoPresenter"/>
+
+        <variable
+            name="presenter"
+            type="TaoBaoPresenter"/>
+
+        <variable
+            name="amount"
+            type="int"/>
+
+        <variable
+            name="goodsUrl"
+            type="String"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.taobao.AddToCartOfTaoBaoActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:imageUrl="@{goodsUrl}"
+                android:scaleType="centerInside"
+                android:layout_gravity="center_horizontal"/>
+            <Button
+                android:id="@+id/btn_add_shopping_cart_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="@{() -> presenter.onAddToCartOfTop()}"
+                android:text="加入购物车"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_shopping_cart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/stroke_rectangle">
+
+                <ImageView
+                    android:id="@+id/iv_shopping_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:background="@drawable/recommend_cart_btn_bg_selector"
+                    android:padding="8dp"/>
+
+                <com.github.learn.cart.ui.helper.CircleTextView
+                    android:id="@+id/tv_shopping_cart_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_alignEnd="@+id/iv_shopping_cart"
+                    android:layout_alignRight="@+id/iv_shopping_cart"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="-8dp"
+                    android:background="@drawable/homepage_shape_red_filled_circle"
+                    android:text="@{@string/cart_of_tao_bao_amount(amount)}"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add_shopping_cart_bottom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="@{() -> presenter.onAddToCartOfBottom()}"
+                android:text="加入购物车"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
