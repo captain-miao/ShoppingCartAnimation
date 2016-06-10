@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:imageUrl="@{goodsUrl}"
-                android:scaleType="centerInside"
+                app:error="@{@drawable/goods}"
                 android:layout_gravity="center_horizontal"/>
             <Button
                 android:id="@+id/btn_add_shopping_cart_top"

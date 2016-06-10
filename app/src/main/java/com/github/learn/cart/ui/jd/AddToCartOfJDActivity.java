@@ -65,7 +65,7 @@ public class AddToCartOfJDActivity extends BaseActivity implements JDPresenter {
         /* 中点 */
         int mx = (tx + fx) / 2;
         int my = ScreenUtils.getScreenHeight(this) / 10;
-        AddToCartHelper.startAnimation(v, 0, 0, fx, fy, mx, my, tx, ty, new AddToCartHelper.AnimationListener() {
+        AddToCartHelper.startAnimationForJd(v, 0, 0, fx, fy, mx, my, tx, ty, new AddToCartHelper.AnimationListener() {
             @Override
             public void onAnimationEnd() {
                 mBinding.setAmount(++mAmount);
@@ -90,7 +90,7 @@ public class AddToCartOfJDActivity extends BaseActivity implements JDPresenter {
     public class ScaleUpAnimator extends BaseViewAnimator {
         @Override
         public void prepare(View target) {
-            ViewGroup parent = (ViewGroup)target.getParent();
+            //ViewGroup parent = (ViewGroup)target.getParent();
             //int distance = parent.getHeight() - target.getTop();
             getAnimatorAgent().playTogether(
                     //ObjectAnimator.ofFloat(target,"alpha",0,1,1),

@@ -8,6 +8,7 @@
 
 
     <string name="cart_of_tao_bao_amount" formatted="false">¥%d</string>
+    <string name="cart_of_amazon_amount" formatted="false">%d</string>
 
 
 </resources>

@@ -21,7 +21,7 @@ public class PicassoBindingAdapter {
     }
     @BindingAdapter({"imageUrl", "error"})
     public static void imageLoader(ImageView imageView, String url, Drawable error) {
-        Picasso.with(imageView.getContext()).load(url).error(error).into(imageView);
+        Picasso.with(imageView.getContext()).load(url).placeholder(error).error(error).into(imageView);
     }
 
 

@@ -24,6 +24,8 @@
             android:label="@string/shopping_cart_of_tao_bao"/>
         <activity android:name=".ui.jd.AddToCartOfJDActivity"
                   android:label="@string/shopping_cart_of_jd"/>
+        <activity android:name=".ui.amazon.AddToCartOfAmazonActivity"
+                  android:label="@string/shopping_cart_of_amazon"/>
     </application>
 
 </manifest>

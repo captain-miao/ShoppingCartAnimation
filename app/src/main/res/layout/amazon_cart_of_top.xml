@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp">
+
+    <ImageView
+        android:id="@+id/iv_shopping_cart_top"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:background="@drawable/ic_shopping_cart"/>
+
+    <TextView
+        android:id="@+id/tv_shopping_cart_top_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:textColor="@color/tao_bao_red"
+        android:text="0"
+        android:textSize="10sp"
+        android:paddingBottom="2dp"/>
+</RelativeLayout>

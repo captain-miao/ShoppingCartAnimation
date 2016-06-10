@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import com.github.learn.cart.R;
 import com.github.learn.cart.databinding.ActivityMainBinding;
+import com.github.learn.cart.ui.amazon.AddToCartOfAmazonActivity;
 import com.github.learn.cart.ui.base.BaseActivity;
 import com.github.learn.cart.ui.jd.AddToCartOfJDActivity;
 import com.github.learn.cart.ui.taobao.AddToCartOfTaoBaoActivity;
@@ -33,7 +34,7 @@ public class MainActivity extends BaseActivity implements MainPresenter {
 
     @Override
     public void onSelectedAmazon() {
-        startActivity(new Intent(MainActivity.this, AddToCartOfTaoBaoActivity.class));
+        startActivity(new Intent(MainActivity.this, AddToCartOfAmazonActivity.class));
     }
 
     @Override
