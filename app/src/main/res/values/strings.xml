@@ -5,6 +5,7 @@
     <string name="shopping_cart_of_tao_bao">Shopping Cart Of TaoBao</string>
     <string name="shopping_cart_of_jd">Shopping Cart Of JD</string>
     <string name="shopping_cart_of_amazon">Shopping Cart Of Amazon</string>
+    <string name="shopping_cart_of_simple">Shopping Cart Of Simple</string>
 
 
     <string name="cart_of_tao_bao_amount" formatted="false">¥%d</string>

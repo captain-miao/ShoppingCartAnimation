@@ -9,6 +9,7 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.DecelerateInterpolator;
+import android.view.animation.LinearInterpolator;
 import android.view.animation.OvershootInterpolator;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
@@ -146,7 +147,7 @@ public class AddToCartHelper {
     public static void startAnimationForTop(final View v, int fromXDelta, int fromYDelta, int fx, int fy, int mx, int my, int tx, int ty, final AnimationListener listener) {
         AnimationSet set = new AnimationSet(false);
         TranslateAnimation translateAnimation1 = new TranslateAnimation(fromXDelta, mx - fx, fromYDelta, my - fy);
-        translateAnimation1.setInterpolator(new OvershootInterpolator());
+        translateAnimation1.setInterpolator(new LinearInterpolator());
         translateAnimation1.setRepeatCount(0);
         translateAnimation1.setFillAfter(false);
         set.addAnimation(translateAnimation1);

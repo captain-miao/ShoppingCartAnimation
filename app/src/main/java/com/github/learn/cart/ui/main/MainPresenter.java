@@ -9,4 +9,5 @@ public interface MainPresenter {
     void onSelectedTaoBao();
     void onSelectedAmazon();
     void onSelectedJD();
+    void onSelectedSimple();
 }

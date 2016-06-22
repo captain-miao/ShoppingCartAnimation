@@ -27,7 +27,7 @@ public class CircleTextView  extends TextView {
 
 		int width = (int) (getTextWidth(getPaint(), getText().toString()) + 0.5);
         int height = (int) (getTextHeight(getPaint(), getText().toString()) + 0.5);
-        int viewLength = Math.max(width, height) + 10; // TODO: 16/6/9
+        int viewLength = Math.max(width, height) + 16; // TODO: 16/6/9
         setMeasuredDimension(viewLength, viewLength);
 
 	}

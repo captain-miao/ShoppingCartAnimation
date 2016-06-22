@@ -53,5 +53,17 @@
             android:text="@string/shopping_cart_of_jd"
             android:onClick="@{() -> presenter.onSelectedJD()}"/>
 
+        <TextView
+            android:id="@+id/tv_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/text_color"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/shopping_cart_of_simple"
+            android:onClick="@{() -> presenter.onSelectedSimple()}"/>
+
     </LinearLayout>
 </layout>

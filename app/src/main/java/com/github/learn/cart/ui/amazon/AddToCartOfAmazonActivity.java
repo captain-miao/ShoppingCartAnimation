@@ -1,7 +1,9 @@
 package com.github.learn.cart.ui.amazon;
 
+import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,6 +34,8 @@ public class AddToCartOfAmazonActivity extends BaseActivity implements AmazonPre
 
         mBinding.setGoodsUrl(GOODS_URL);
         mBinding.setPresenter(this);
+
+        mVIBRATE = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
     }
 
     @Override
@@ -47,8 +51,11 @@ public class AddToCartOfAmazonActivity extends BaseActivity implements AmazonPre
 
 
     private int mAmount = 0;
+    private Vibrator mVIBRATE;
     @Override
     public void onAddToCartOfTop() {
+        // VIBRATE
+        mVIBRATE.vibrate(new long[]{0, 200}, -1);
         final TextView animText = new TextView(this);
         animText.setTextColor(getResources().getColor(R.color.tao_bao_red));
         animText.setBackgroundColor(getResources().getColor(android.R.color.transparent));
