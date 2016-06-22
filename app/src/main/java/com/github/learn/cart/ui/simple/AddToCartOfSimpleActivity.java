@@ -93,7 +93,7 @@ public class AddToCartOfSimpleActivity extends BaseActivity implements SimplePre
 
         /* 中点 */
         int mx = (tx + fx);
-        int my = ScreenUtils.getScreenHeight(this) / 10;
+        int my = ScreenUtils.getScreenHeight(this) / 3;
         AddToCartHelper.startAnimationForTop(v, 0, 0, fx, fy, mx, my, tx, ty, new AddToCartHelper.AnimationListener() {
             @Override
             public void onAnimationEnd() {
