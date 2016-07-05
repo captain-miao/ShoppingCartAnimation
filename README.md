@@ -8,9 +8,9 @@ animation for add to shopping cart.
 ## JD
 ![add_to_cart](https://raw.githubusercontent.com/captain-miao/me.github.com/master/animation/add_to_cart.gif)
 ## Amazon
-![add_to_cart](https://raw.githubusercontent.com/captain-miao/me.github.com/master/animation/add_to_cart.gif)
+![add_to_cart](https://raw.githubusercontent.com/captain-miao/me.github.com/master/animation/add_to_cart_amazon.gif)
 ## Myself
-> ![add_to_cart](https://raw.githubusercontent.com/captain-miao/me.github.com/master/animation/add_to_shopping_cart.gif
+> ![add_to_cart](https://raw.githubusercontent.com/captain-miao/me.github.com/master/animation/add_to_shopping_cart.gif)
 
 ## Thanks
 [WarrenJones/View](https://github.com/WarrenJones/View)
